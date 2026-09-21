@@ -10,7 +10,7 @@ pipeline {
         IMAGE_TAG          = "${RELEASE}-${BUILD_NUMBER}"
         SONAR_HOST_URL     = "http://35.154.158.200:9000"
         JFROG_URL          = "http://43.204.111.118:8082/artifactory"
-        NOTIFICATION_EMAIL = "muntajibadnan@gmail.com"
+        NOTIFICATION_EMAIL = "syedkaleem2176@gmail.com"
     }
 
     stages {
@@ -22,7 +22,7 @@ pipeline {
 
         stage("Checkout from SCM") {
             steps {
-                git branch: 'main', url: 'https://github.com/muntajibadnan-svg/registration-app-cicd-project'
+                git branch: 'main', url: 'https://github.com/awaisxax/Registration-App-CICD-Project.git'
             }
         }
 
