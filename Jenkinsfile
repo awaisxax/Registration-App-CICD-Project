@@ -4,7 +4,7 @@ pipeline {
     environment {
         APP_NAME           = "automated-cicd-app"
         RELEASE            = "1.0.0"
-        DOCKER_USER        = "mohammed314"
+        DOCKER_USER        = "awaisxax"
         DOCKER_CRED_ID     = "docker-hub"
         IMAGE_NAME         = "${DOCKER_USER}/${APP_NAME}"
         IMAGE_TAG          = "${RELEASE}-${BUILD_NUMBER}"
